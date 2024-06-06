@@ -1,48 +1,75 @@
+/* Navbar */
 .navbar {
-    
-    
-    overflow: hidden;
-    font-family: 'Playfair Display', serif;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start (left) */
+  padding: 10px 20px;
+  font-family: 'Playfair Display', serif;
+}
+
 .navbar img {
-    float: left; /* Align logo to the left */
-    height: 120px; /* Adjust the height as needed */
-    padding: 10px; /* Add padding around the logo */
-    margin-left: 80px;
-  
+  height: 120px;
+  margin-left: 130px;
+}
 
+.navbar-links {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(139, 146, 141);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar-links a:hover {
+  color: white;
+}
+
+/* Navbar toggle */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(139, 146, 141);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Responsive menu */
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links.active a {
+  margin: 10px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
   }
-.navbar a {
-    margin-top: 58px;
-    float: left; /* Align links to the left */
-    display: block; /* Make the links behave as blocks */
-    color: rgb(139, 146, 141);
-    text-align: center; /* Center the text */
-    padding : 0px 20px; /* Add padding */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px;
+
+  .navbar-toggle {
+    display: block;
     margin-left: 10px;
-   
   }
-.navbar a:hover {
-    color: white;
-  }
-
-.navbar-right{
-    float: left;
-    margin-left: 580px;
-   
-}
-
-.navbar-right a{
-    color:white;
-    background-color:orange;
-    padding: 15px;
-    margin-top: 40px;
-
-
-}
-
-.navbar-right a:hover{
-    color: black;
 }

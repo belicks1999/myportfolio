@@ -1,57 +1,75 @@
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  
-   
-    
+  display: flex;
+  flex-direction: column; /* Change to column for better stacking on small screens */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Change to column for better stacking on small screens */
+  align-items: center;
+}
+
+.text-content {
+  margin-right: 0; /* Remove margin-right to center text on small screens */
+  color: white;
+  text-align: center; /* Center text on small screens */
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero h1 {
+  font-size: 25px;
+  margin-right: 0; /* Remove margin-right to center text on small screens */
+}
+
+.hero h2 {
+  font-size: 15px;
+}
+
+.hero p {
+  font-size: 60px;
+}
+
+.hero img {
+  max-width: 300px; /* Adjust the size of the image as needed */
+  height: auto;
+  margin-top: 20px; /* Add some margin-top to separate image from text on small screens */
+}
+
+.image-frame {
+  display: inline-block;
+  border-radius: 10%; /* Makes the image rounded */
+  overflow: hidden; /* Ensures the image stays within the rounded frame */
+}
+
+.profile-image {
+  max-width: 100px; /* Adjust the size of the image as needed */
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row; /* Change to row for larger screens */
   }
-  
+
   .hero-content {
-    display: flex;
-    align-items: center;
+    flex-direction: row; /* Change to row for larger screens */
   }
-  
+
   .text-content {
-    margin-right: 150px;
-    color: white;
-    text-align: left;
-    line-height: 1;
-    font-family: 'Playfair Display', serif;
-
-
-
-    
+    margin-right: 150px; /* Add margin-right back for larger screens */
+    text-align: left; /* Align text to the left for larger screens */
   }
 
-  .hero h1{
-    font-size: 25px;
-    
+  .hero h1 {
+    margin-right: 560px; /* Add margin-right back for larger screens */
   }
 
-  .hero h2{
-    font-size: 15px;
-  }
-  .hero p{
-    font-size: 60px;
-  }
-  
   .hero img {
-    max-width: 300px; /* Adjust the size of the image as needed */
-    height: auto;
-    justify-content: right;
+    margin-top: 0; 
+    margin-bottom: 0;/* Remove margin-top for larger screens */
   }
-  
-  .image-frame {
-    display: inline-block;
-    border-radius: 10%; /* Makes the image rounded */
-    overflow: hidden; /* Ensures the image stays within the rounded frame */
-  }
-  
-  .profile-image {
-    max-width: 100px; /* Adjust the size of the image as needed */
-    height: auto;
-  }
-
-  
+}
