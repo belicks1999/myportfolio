@@ -1,0 +1,60 @@
+.projects-section {
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .projects-section h2 {
+    font-size: 50px;
+    color: orange;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    position: relative;
+    padding: 1.5rem;
+    background-color: orange;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .project-card p {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .project-details {
+    margin-top: auto;
+  }
+  
+  .project-details p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .project-details a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10%;
+    
+  }
+  
+  .project-details a:hover {
+    text-decoration: underline;
+  }
+  
