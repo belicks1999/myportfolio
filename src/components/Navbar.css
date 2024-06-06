@@ -1,0 +1,48 @@
+.navbar {
+    
+    
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+  }
+.navbar img {
+    float: left; /* Align logo to the left */
+    height: 120px; /* Adjust the height as needed */
+    padding: 10px; /* Add padding around the logo */
+    margin-left: 80px;
+  
+
+  }
+.navbar a {
+    margin-top: 58px;
+    float: left; /* Align links to the left */
+    display: block; /* Make the links behave as blocks */
+    color: rgb(139, 146, 141);
+    text-align: center; /* Center the text */
+    padding : 0px 20px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    margin-left: 10px;
+   
+  }
+.navbar a:hover {
+    color: white;
+  }
+
+.navbar-right{
+    float: left;
+    margin-left: 580px;
+   
+}
+
+.navbar-right a{
+    color:white;
+    background-color:orange;
+    padding: 15px;
+    margin-top: 40px;
+
+
+}
+
+.navbar-right a:hover{
+    color: black;
+}

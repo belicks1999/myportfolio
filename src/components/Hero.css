@@ -1,0 +1,57 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  
+   
+    
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text-content {
+    margin-right: 150px;
+    color: white;
+    text-align: left;
+    line-height: 1;
+    font-family: 'Playfair Display', serif;
+
+
+
+    
+  }
+
+  .hero h1{
+    font-size: 25px;
+    
+  }
+
+  .hero h2{
+    font-size: 15px;
+  }
+  .hero p{
+    font-size: 60px;
+  }
+  
+  .hero img {
+    max-width: 300px; /* Adjust the size of the image as needed */
+    height: auto;
+    justify-content: right;
+  }
+  
+  .image-frame {
+    display: inline-block;
+    border-radius: 10%; /* Makes the image rounded */
+    overflow: hidden; /* Ensures the image stays within the rounded frame */
+  }
+  
+  .profile-image {
+    max-width: 100px; /* Adjust the size of the image as needed */
+    height: auto;
+  }
+
+  
