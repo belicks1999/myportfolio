@@ -7,10 +7,10 @@ import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/fre
 function Footer(){
     return(<div className="col-lg-6 d-flex align-items-center">
     <div className="social-icons">
-      <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-      <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
-      <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-      <a href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
+      <a href="https://x.com/MaxBelicks" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
+      <a href="https://www.facebook.com/share/9HpaY5oY8zmX7NuY/?mibextid=kFxxJD" target="_blank"><FontAwesomeIcon icon={faFacebook} /></a>
+      <a href="https://www.instagram.com/belicks_maxwell?igsh=Z2x0eWs1aDQ4eWs2&utm_source=qr" target="_blank"><FontAwesomeIcon icon={faInstagram} /></a>
+      <a href="https://www.linkedin.com/in/belicks-maxwell-751b40251/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
     </div>
   </div>);
 

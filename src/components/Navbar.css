@@ -34,6 +34,7 @@
 .navbar-toggle {
   display: none;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .bar {

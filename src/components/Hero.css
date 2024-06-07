@@ -73,3 +73,17 @@
     margin-bottom: 0;/* Remove margin-top for larger screens */
   }
 }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

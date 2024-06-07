@@ -21,6 +21,7 @@
 .content {
   flex: 3;
   padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
   color: white;
   border: 1px solid #ddd;
   border-radius: 5px;
