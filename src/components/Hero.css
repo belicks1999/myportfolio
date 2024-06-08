@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 20px;
 }
+ 
 
 .hero-content {
   display: flex;
@@ -18,7 +19,12 @@
   text-align: center; /* Center text on small screens */
   line-height: 1;
   font-family: 'Playfair Display', serif;
+  
+  
 }
+
+
+
 
 .hero h1 {
   font-size: 25px;
@@ -30,7 +36,7 @@
 }
 
 .hero p {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .hero img {
@@ -72,6 +78,12 @@
     margin-top: 0; 
     margin-bottom: 0;/* Remove margin-top for larger screens */
   }
+  .hero p {
+    font-size: 55px;
+  }
+  
+
+ 
 }
 
 .fade-in {

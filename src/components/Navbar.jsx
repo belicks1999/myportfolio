@@ -4,35 +4,33 @@ import logo from "../images/logo.png";
 import { Link } from "react-scroll";
 
 function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <nav className="navbar">
+    <div className="navbar">
       <img src={logo} alt="Logo" />
-      <div className={showMenu ? "navbar-links active" : "navbar-links"}>
-        <Link to="hero" smooth={true} duration={500} onClick={() => setShowMenu(false)}>
+      <span className="navbar-toggle" onClick={toggleNavbar}>
+        &#9776; {/* Unicode for hamburger menu icon */}
+      </span>
+      <div className={`navbar-links ${isOpen ? "show" : ""}`}>
+        <Link to="hero" smooth={true} duration={500} onClick={toggleNavbar}>
           Home
         </Link>
-        <Link to="about" smooth={true} duration={500} onClick={() => setShowMenu(false)}>
+        <Link to="about" smooth={true} duration={500} onClick={toggleNavbar}>
           About
         </Link>
-        <Link to="projects" smooth={true} duration={500} onClick={() => setShowMenu(false)}>
+        <Link to="projects" smooth={true} duration={500} onClick={toggleNavbar}>
           Projects
         </Link>
-        <Link to="contact" smooth={true} duration={500} onClick={() => setShowMenu(false)}>
+        <Link to="contact" smooth={true} duration={500} onClick={toggleNavbar}>
           Contact
         </Link>
       </div>
-      <div className="navbar-toggle" onClick={toggleMenu}>
-        <div className={showMenu ? "bar active" : "bar"}></div>
-        <div className={showMenu ? "bar active" : "bar"}></div>
-        <div className={showMenu ? "bar active" : "bar"}></div>
-      </div>
-    </nav>
+    </div>
   );
 }
 

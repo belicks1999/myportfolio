@@ -1,76 +1,119 @@
-/* Navbar */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Align items to the start (left) */
-  padding: 10px 20px;
+
+
+  overflow: hidden;
   font-family: 'Playfair Display', serif;
 }
-
 .navbar img {
-  height: 120px;
-  margin-left: 130px;
-}
+  float: left; /* Align logo to the left */
+  height: 120px; /* Adjust the height as needed */
+  padding: 10px; /* Add padding around the logo */
+  margin-left: 80px;
 
-.navbar-links {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
 
-.navbar-links a {
-  margin-left: 20px;
-  text-decoration: none;
+}
+.navbar a {
+  margin-top: 58px;
+  float: left; /* Align links to the left */
+  display: block; /* Make the links behave as blocks */
   color: rgb(139, 146, 141);
+  text-align: center; /* Center the text */
+  padding : 0px 20px; /* Add padding */
+  text-decoration: none; /* Remove underline */
   font-size: 18px;
-  cursor: pointer;
-}
+  margin-left: 10px;
+  cursor:pointer;
 
-.navbar-links a:hover {
+
+}
+.navbar a:hover {
   color: white;
 }
 
-/* Navbar toggle */
+.navbar-right{
+  float: left;
+  margin-left: 580px;
+
+}
+
+.navbar-right a{
+  color:white;
+  background-color:orange;
+  padding: 15px;
+  margin-top: 40px;
+
+
+}
+
+.navbar-right a:hover{
+  color: black;
+}
+
+/* Toggle button styles */
 .navbar-toggle {
-  display: none;
+  display: none; /* Hide by default */
+  font-size: 30px;
   cursor: pointer;
-  margin-right: 20px;
+  color: white;
+  
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(139, 146, 141);
-  margin: 5px 0;
-  transition: 0.4s;
-}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* Responsive menu */
-.navbar-links.active {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 80px;
-  right: 0;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  .navbar img {
+    margin: 0;
+    padding: 5px 0;
+    width: 30%;
+  }
 
-.navbar-links.active a {
-  margin: 10px 0;
-}
+  .navbar a {
+    float: none;
+    margin: 10px 0;
+    font-size: 16px;
+  }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
+  .navbar-right {
+    float: none;
+    margin: 0;
+  }
+
+  .navbar-right a {
+    margin-top: 10px;
+    padding: 10px;
   }
 
   .navbar-toggle {
-    display: block;
-    margin-left: 10px;
+    display: block; /* Show toggle button on smaller screens */
+  }
+
+  .navbar-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links.show {
+    display: flex; /* Show links when toggled */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar img {
+    height: 80px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .navbar-right a {
+    padding: 8px;
   }
 }
